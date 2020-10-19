@@ -4,7 +4,7 @@ module.exports = function check(str, bracketsConfig) {
       obj[bracketsConfig[i][1]] = bracketsConfig[i][0];
   }
   let arr = str.split('');
-  for(let i=0; i<str.length;i++) {
+  for(let i=0; i<arr.length;i++) {
       if(arr[i] === obj[arr[i+1]]) {
           arr.splice(i,2)
           i = -1;
